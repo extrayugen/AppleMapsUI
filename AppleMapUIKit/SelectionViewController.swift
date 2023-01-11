@@ -14,7 +14,7 @@ class SelectionViewController: UIViewController {
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
-        stack.spacing = 5
+        stack.spacing = 20
         stack.alignment = .center
         stack.isLayoutMarginsRelativeArrangement = true
         stack.layoutMargins = .init(top: 10, left: 10, bottom: 10, right: 10)
@@ -29,6 +29,7 @@ class SelectionViewController: UIViewController {
         button.titleLabel?.font = .preferredFont(forTextStyle: .headline)
         button.backgroundColor = .systemBlue
         button.addTarget(self, action: #selector(didTapUIKitButton(_:)), for: .touchUpInside)
+        button.layer.cornerRadius = 8
         
         return button
     }()
@@ -41,6 +42,7 @@ class SelectionViewController: UIViewController {
         button.titleLabel?.font = .preferredFont(forTextStyle: .headline)
         button.backgroundColor = .systemBlue
         button.addTarget(self, action: #selector(didTapSwiftUIButton(_:)), for: .touchUpInside)
+        button.layer.cornerRadius = 8
         
         return button
     }()
@@ -54,7 +56,7 @@ class SelectionViewController: UIViewController {
         setupStyle()
         configureViews()
     }
-
+    
     private func setupStyle() {
         view.backgroundColor = .systemBackground
     }
@@ -66,7 +68,8 @@ class SelectionViewController: UIViewController {
             vStack.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             vStack.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             vStack.topAnchor.constraint(greaterThanOrEqualTo: view.topAnchor),
-            vStack.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor)
+            vStack.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor),
+            vStack.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
         
         vStack.addArrangedSubviews([
@@ -75,10 +78,11 @@ class SelectionViewController: UIViewController {
         ])
         
         NSLayoutConstraint.activate([
-            swiftuiSelectionButton.heightAnchor.constraint(equalToConstant: 80),
-            uikitSelectionButton.heightAnchor.constraint(equalToConstant: 80),
-            swiftuiSelectionButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
-            uikitSelectionButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8)
+            swiftuiSelectionButton.heightAnchor.constraint(equalToConstant: 60),
+            uikitSelectionButton.heightAnchor.constraint(equalToConstant: 60),
+            
+            swiftuiSelectionButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.6),
+            uikitSelectionButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.6)
         ])
     }
 }

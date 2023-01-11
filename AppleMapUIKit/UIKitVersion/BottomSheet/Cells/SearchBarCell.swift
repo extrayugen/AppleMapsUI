@@ -46,7 +46,7 @@ class SearchBarCell: UICollectionViewCell {
         return searchBar
         
     }()
-        
+    
     // MARK: LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BottomSheetMainView: View {
     @Binding var searchText: String
+    let action: () -> Void
     var body: some View {
         List {
             HStack {
@@ -26,13 +27,13 @@ struct BottomSheetMainView: View {
             Section {
                 HStack (alignment: .top, spacing: 20){
                     HorizontalButton(icon: "house.fill", title: "Home", showAdd: true) {
-                            print("Home")
+                            action()
                     }
                     HorizontalButton(icon: "briefcase.fill", title: "Work", showAdd: true) {
-                            print("Work")
+                        action()
                     }
                     HorizontalButton(icon: "plus", title: "Add", showAdd: false) {
-                            print("Add")
+                        action()
                     }
                     Spacer()
                 }
@@ -93,6 +94,6 @@ struct BottomSheetMainView: View {
 
 struct BottomSheetMainView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomSheetMainView(searchText: .constant(""))
+        BottomSheetMainView(searchText: .constant("")) {}
     }
 }

@@ -21,13 +21,13 @@ class BottomSheetViewController: UIViewController {
     }()
     
     // MARK: - Stored Properties
-
+    
     private let viewModel: BottomSheetControllerViewModel
     
     private var observer:NSKeyValueObservation?
     
     // MARK: - Life Cycle
-
+    
     init(viewModel: BottomSheetControllerViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -152,7 +152,7 @@ extension BottomSheetViewController {
         section.interGroupSpacing = 10
         
         section.boundarySupplementaryItems = [header]
-                
+        
         return section
     }
     
@@ -267,12 +267,12 @@ extension UISheetPresentationController.Detent {
 extension BottomSheetViewController {
     private func setObservers() {
         observer = observe(
-                    \.view?.frame,
-                    options: [.old, .new]
-                ) { object, change in
-                    guard let height = change.newValue??.height else { return }
-                    NotificationCenter.default.post(name: .bottomSheetHeight, object: height)
-                }
+            \.view?.frame,
+             options: [.old, .new]
+        ) { object, change in
+            guard let height = change.newValue??.height else { return }
+            NotificationCenter.default.post(name: .bottomSheetHeight, object: height)
+        }
     }
 }
 

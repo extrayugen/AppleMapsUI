@@ -70,7 +70,7 @@ class CarouselButtonCell: UICollectionViewCell {
         image.tintColor = .systemBlue
         return image
     }()
-        
+    
     // MARK: LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)

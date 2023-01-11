@@ -87,12 +87,12 @@ class HorizontalSearchCell: UICollectionViewCell {
     }()
     
     private lazy var separator: UIView = {
-       let view = UIView()
-       view.translatesAutoresizingMaskIntoConstraints = false
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .separator
         return view
     }()
-        
+    
     // MARK: LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)

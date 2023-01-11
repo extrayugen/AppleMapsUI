@@ -23,7 +23,7 @@ class ListStyleCollectionViewHeader: UICollectionViewCell {
         label.adjustsFontSizeToFitWidth = true
         return label
     }()
-        
+    
     // MARK: LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)

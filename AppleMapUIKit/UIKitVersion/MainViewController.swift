@@ -56,7 +56,7 @@ class MainViewController: UIViewController {
         button.setImage(UIImage(systemName: "binoculars.fill"), for: .normal)
         button.backgroundColor = .gray
         button.imageView?.tintColor = .white
-        button.addTarget(self, action: #selector(didTap3DButton(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapStreetViewButton(_:)), for: .touchUpInside)
         button.layer.cornerRadius = 8
         
         return button
@@ -69,7 +69,7 @@ class MainViewController: UIViewController {
         button.backgroundColor = .gray
         button.imageView?.tintColor = .white
         button.layer.cornerRadius = 8
-        button.addTarget(self, action: #selector(didTap3DButton(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapMapButton(_:)), for: .touchUpInside)
         
         return button
     }()
@@ -82,7 +82,7 @@ class MainViewController: UIViewController {
         button.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         button.layer.cornerRadius = 6
         button.imageView?.tintColor = .white
-        button.addTarget(self, action: #selector(didTap3DButton(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapMapButton(_:)), for: .touchUpInside)
         
         return button
     }()
@@ -95,7 +95,7 @@ class MainViewController: UIViewController {
         button.imageView?.tintColor = .white
         button.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         button.layer.cornerRadius = 6
-        button.addTarget(self, action: #selector(didTap3DButton(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapLocationButton(_:)), for: .touchUpInside)
         
         return button
     }()
@@ -103,7 +103,7 @@ class MainViewController: UIViewController {
     private lazy var bottomSheetController = BottomSheetViewController(viewModel: .init())
     
     // MARK: - Stored Properties
-
+    
     private let viewModel: MainViewModel
     
     private var subscriptions = Set<AnyCancellable>()
@@ -111,7 +111,7 @@ class MainViewController: UIViewController {
     private var bottomButtonAnchor: NSLayoutConstraint?
     
     // MARK: - Life Cycle
-
+    
     init(viewModel: MainViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -121,7 +121,7 @@ class MainViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+     
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -172,7 +172,7 @@ extension MainViewController {
         NSLayoutConstraint.activate([
             mapButton.heightAnchor.constraint(equalToConstant: 45),
             mapButton.widthAnchor.constraint(equalToConstant: 45),
-
+            
             locationButton.heightAnchor.constraint(equalToConstant: 45),
             locationButton.widthAnchor.constraint(equalToConstant: 45),
             
@@ -226,7 +226,23 @@ extension MainViewController {
 // MARK: - Action(s)
 extension MainViewController {
     @objc private func didTap3DButton(_ sender: UIButton) {
-        
+        navigationController?.popViewController(animated: true)
+        bottomSheetController.dismiss(animated: true)
+    }
+    
+    @objc private func didTapStreetViewButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        bottomSheetController.dismiss(animated: true)
+    }
+    
+    @objc private func didTapMapButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        bottomSheetController.dismiss(animated: true)
+    }
+    
+    @objc private func didTapLocationButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        bottomSheetController.dismiss(animated: true)
     }
 }
 

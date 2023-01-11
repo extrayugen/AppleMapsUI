@@ -33,6 +33,8 @@
 		C5EE4049296DC72F00BA691B /* CustomPresentationDetents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4048296DC72F00BA691B /* CustomPresentationDetents.swift */; };
 		C5EE404B296E368900BA691B /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE404A296E368900BA691B /* NotificationName+Extension.swift */; };
 		C5EE404D296E4D8D00BA691B /* MainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE404C296E4D8D00BA691B /* MainViewControllerViewModel.swift */; };
+		C5EE4050296E59B800BA691B /* MapButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE404F296E59B800BA691B /* MapButtons.swift */; };
+		C5EE4052296E5A2400BA691B /* MapButtonSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4051296E5A2400BA691B /* MapButtonSingleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		C5EE4048296DC72F00BA691B /* CustomPresentationDetents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationDetents.swift; sourceTree = "<group>"; };
 		C5EE404A296E368900BA691B /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
 		C5EE404C296E4D8D00BA691B /* MainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModel.swift; sourceTree = "<group>"; };
+		C5EE404F296E59B800BA691B /* MapButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapButtons.swift; sourceTree = "<group>"; };
+		C5EE4051296E5A2400BA691B /* MapButtonSingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapButtonSingleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +111,11 @@
 		C583A924296A56DA00B416A6 /* AppleMapUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				C5EE403A296DC6EA00BA691B /* SwiftUIVersion */,
 				C583A925296A56DA00B416A6 /* AppDelegate.swift */,
 				C583A927296A56DA00B416A6 /* SceneDelegate.swift */,
-				C583A929296A56DA00B416A6 /* MainViewController.swift */,
-				C5EE404C296E4D8D00BA691B /* MainViewControllerViewModel.swift */,
 				C5EE4038296DC4B500BA691B /* SelectionViewController.swift */,
-				C5EE4031296D0B3700BA691B /* BottomSheet */,
+				C5EE403A296DC6EA00BA691B /* SwiftUIVersion */,
+				C5EE404E296E592A00BA691B /* UIKitVersion */,
 				C580629F296CD22A0028A2D3 /* Model */,
 				C583A93C296A86BE00B416A6 /* Utilities */,
 				C583A92E296A56DC00B416A6 /* Assets.xcassets */,
@@ -169,10 +171,22 @@
 			isa = PBXGroup;
 			children = (
 				C5EE4040296DC71B00BA691B /* HorizontalButtonView.swift */,
+				C5EE404F296E59B800BA691B /* MapButtons.swift */,
+				C5EE4051296E5A2400BA691B /* MapButtonSingleView.swift */,
 				C5EE4041296DC71B00BA691B /* SearchBarView.swift */,
 				C5EE4042296DC71B00BA691B /* HorizontalSearchListRow.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C5EE404E296E592A00BA691B /* UIKitVersion */ = {
+			isa = PBXGroup;
+			children = (
+				C583A929296A56DA00B416A6 /* MainViewController.swift */,
+				C5EE404C296E4D8D00BA691B /* MainViewControllerViewModel.swift */,
+				C5EE4031296D0B3700BA691B /* BottomSheet */,
+			);
+			path = UIKitVersion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +262,7 @@
 				C583A92A296A56DA00B416A6 /* MainViewController.swift in Sources */,
 				C583A93E296A86DA00B416A6 /* UICollectionViewReusableView+Extension.swift in Sources */,
 				C583A926296A56DA00B416A6 /* AppDelegate.swift in Sources */,
+				C5EE4050296E59B800BA691B /* MapButtons.swift in Sources */,
 				C583A941296A88D000B416A6 /* CarouselButtonCell.swift in Sources */,
 				C5EE404B296E368900BA691B /* NotificationName+Extension.swift in Sources */,
 				C5EE4045296DC71B00BA691B /* HorizontalSearchListRow.swift in Sources */,
@@ -267,6 +282,7 @@
 				C5EE4039296DC4B500BA691B /* SelectionViewController.swift in Sources */,
 				C583A928296A56DA00B416A6 /* SceneDelegate.swift in Sources */,
 				C58062A3296CD6520028A2D3 /* HorizontalSearchCell.swift in Sources */,
+				C5EE4052296E5A2400BA691B /* MapButtonSingleView.swift in Sources */,
 				C583A93A296A5E8900B416A6 /* BottomSheetViewController.swift in Sources */,
 				C583A94B296B524000B416A6 /* HorizontalSearchType.swift in Sources */,
 			);
