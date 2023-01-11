@@ -7,23 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C58062A1296CD23A0028A2D3 /* CarouselButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58062A0296CD23A0028A2D3 /* CarouselButtonModel.swift */; };
+		C58062A3296CD6520028A2D3 /* HorizontalSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58062A2296CD6520028A2D3 /* HorizontalSearchCell.swift */; };
 		C583A926296A56DA00B416A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A925296A56DA00B416A6 /* AppDelegate.swift */; };
 		C583A928296A56DA00B416A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A927296A56DA00B416A6 /* SceneDelegate.swift */; };
-		C583A92A296A56DA00B416A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A929296A56DA00B416A6 /* ViewController.swift */; };
-		C583A92D296A56DA00B416A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C583A92B296A56DA00B416A6 /* Main.storyboard */; };
+		C583A92A296A56DA00B416A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A929296A56DA00B416A6 /* MainViewController.swift */; };
 		C583A92F296A56DC00B416A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C583A92E296A56DC00B416A6 /* Assets.xcassets */; };
 		C583A932296A56DC00B416A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C583A930296A56DC00B416A6 /* LaunchScreen.storyboard */; };
+		C583A93A296A5E8900B416A6 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A939296A5E8900B416A6 /* BottomSheetViewController.swift */; };
+		C583A93E296A86DA00B416A6 /* UICollectionViewReusableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A93D296A86DA00B416A6 /* UICollectionViewReusableView+Extension.swift */; };
+		C583A941296A88D000B416A6 /* CarouselButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A940296A88D000B416A6 /* CarouselButtonCell.swift */; };
+		C583A943296A8A0200B416A6 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A942296A8A0200B416A6 /* UIStackView+Extensions.swift */; };
+		C583A949296B47D300B416A6 /* BottomSheetControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A948296B47D300B416A6 /* BottomSheetControllerViewModel.swift */; };
+		C583A94B296B524000B416A6 /* HorizontalSearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A94A296B524000B416A6 /* HorizontalSearchType.swift */; };
+		C583A94D296B524700B416A6 /* HorizontalSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583A94C296B524700B416A6 /* HorizontalSearchModel.swift */; };
+		C5EE4033296D100B00BA691B /* ListStyleCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4032296D100B00BA691B /* ListStyleCollectionViewHeader.swift */; };
+		C5EE4037296DC08A00BA691B /* SearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4036296DC08A00BA691B /* SearchBarCell.swift */; };
+		C5EE4039296DC4B500BA691B /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4038296DC4B500BA691B /* SelectionViewController.swift */; };
+		C5EE403C296DC70D00BA691B /* AppleMapUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE403B296DC70D00BA691B /* AppleMapUIView.swift */; };
+		C5EE403E296DC71400BA691B /* BottomSheetMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE403D296DC71400BA691B /* BottomSheetMainView.swift */; };
+		C5EE4043296DC71B00BA691B /* HorizontalButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4040296DC71B00BA691B /* HorizontalButtonView.swift */; };
+		C5EE4044296DC71B00BA691B /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4041296DC71B00BA691B /* SearchBarView.swift */; };
+		C5EE4045296DC71B00BA691B /* HorizontalSearchListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4042296DC71B00BA691B /* HorizontalSearchListRow.swift */; };
+		C5EE4047296DC72400BA691B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4046296DC72400BA691B /* MainViewModel.swift */; };
+		C5EE4049296DC72F00BA691B /* CustomPresentationDetents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE4048296DC72F00BA691B /* CustomPresentationDetents.swift */; };
+		C5EE404B296E368900BA691B /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE404A296E368900BA691B /* NotificationName+Extension.swift */; };
+		C5EE404D296E4D8D00BA691B /* MainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE404C296E4D8D00BA691B /* MainViewControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C58062A0296CD23A0028A2D3 /* CarouselButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselButtonModel.swift; sourceTree = "<group>"; };
+		C58062A2296CD6520028A2D3 /* HorizontalSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSearchCell.swift; sourceTree = "<group>"; };
 		C583A922296A56DA00B416A6 /* AppleMapUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMapUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C583A925296A56DA00B416A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C583A927296A56DA00B416A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C583A929296A56DA00B416A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C583A92C296A56DA00B416A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C583A929296A56DA00B416A6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C583A92E296A56DC00B416A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C583A931296A56DC00B416A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C583A933296A56DC00B416A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C583A939296A5E8900B416A6 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		C583A93D296A86DA00B416A6 /* UICollectionViewReusableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewReusableView+Extension.swift"; sourceTree = "<group>"; };
+		C583A940296A88D000B416A6 /* CarouselButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselButtonCell.swift; sourceTree = "<group>"; };
+		C583A942296A8A0200B416A6 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		C583A948296B47D300B416A6 /* BottomSheetControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetControllerViewModel.swift; sourceTree = "<group>"; };
+		C583A94A296B524000B416A6 /* HorizontalSearchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSearchType.swift; sourceTree = "<group>"; };
+		C583A94C296B524700B416A6 /* HorizontalSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSearchModel.swift; sourceTree = "<group>"; };
+		C5EE4032296D100B00BA691B /* ListStyleCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyleCollectionViewHeader.swift; sourceTree = "<group>"; };
+		C5EE4036296DC08A00BA691B /* SearchBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarCell.swift; sourceTree = "<group>"; };
+		C5EE4038296DC4B500BA691B /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		C5EE403B296DC70D00BA691B /* AppleMapUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMapUIView.swift; sourceTree = "<group>"; };
+		C5EE403D296DC71400BA691B /* BottomSheetMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetMainView.swift; sourceTree = "<group>"; };
+		C5EE4040296DC71B00BA691B /* HorizontalButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalButtonView.swift; sourceTree = "<group>"; };
+		C5EE4041296DC71B00BA691B /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		C5EE4042296DC71B00BA691B /* HorizontalSearchListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSearchListRow.swift; sourceTree = "<group>"; };
+		C5EE4046296DC72400BA691B /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		C5EE4048296DC72F00BA691B /* CustomPresentationDetents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationDetents.swift; sourceTree = "<group>"; };
+		C5EE404A296E368900BA691B /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
+		C5EE404C296E4D8D00BA691B /* MainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +77,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C580629F296CD22A0028A2D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5EE4048296DC72F00BA691B /* CustomPresentationDetents.swift */,
+				C583A94A296B524000B416A6 /* HorizontalSearchType.swift */,
+				C58062A0296CD23A0028A2D3 /* CarouselButtonModel.swift */,
+				C583A94C296B524700B416A6 /* HorizontalSearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C583A919296A56DA00B416A6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +107,72 @@
 		C583A924296A56DA00B416A6 /* AppleMapUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C5EE403A296DC6EA00BA691B /* SwiftUIVersion */,
 				C583A925296A56DA00B416A6 /* AppDelegate.swift */,
 				C583A927296A56DA00B416A6 /* SceneDelegate.swift */,
-				C583A929296A56DA00B416A6 /* ViewController.swift */,
-				C583A92B296A56DA00B416A6 /* Main.storyboard */,
+				C583A929296A56DA00B416A6 /* MainViewController.swift */,
+				C5EE404C296E4D8D00BA691B /* MainViewControllerViewModel.swift */,
+				C5EE4038296DC4B500BA691B /* SelectionViewController.swift */,
+				C5EE4031296D0B3700BA691B /* BottomSheet */,
+				C580629F296CD22A0028A2D3 /* Model */,
+				C583A93C296A86BE00B416A6 /* Utilities */,
 				C583A92E296A56DC00B416A6 /* Assets.xcassets */,
 				C583A930296A56DC00B416A6 /* LaunchScreen.storyboard */,
 				C583A933296A56DC00B416A6 /* Info.plist */,
 			);
 			path = AppleMapUIKit;
+			sourceTree = "<group>";
+		};
+		C583A93C296A86BE00B416A6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C583A93D296A86DA00B416A6 /* UICollectionViewReusableView+Extension.swift */,
+				C583A942296A8A0200B416A6 /* UIStackView+Extensions.swift */,
+				C5EE404A296E368900BA691B /* NotificationName+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C583A93F296A889B00B416A6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C583A940296A88D000B416A6 /* CarouselButtonCell.swift */,
+				C5EE4036296DC08A00BA691B /* SearchBarCell.swift */,
+				C58062A2296CD6520028A2D3 /* HorizontalSearchCell.swift */,
+				C5EE4032296D100B00BA691B /* ListStyleCollectionViewHeader.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C5EE4031296D0B3700BA691B /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C583A939296A5E8900B416A6 /* BottomSheetViewController.swift */,
+				C583A948296B47D300B416A6 /* BottomSheetControllerViewModel.swift */,
+				C583A93F296A889B00B416A6 /* Cells */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		C5EE403A296DC6EA00BA691B /* SwiftUIVersion */ = {
+			isa = PBXGroup;
+			children = (
+				C5EE403B296DC70D00BA691B /* AppleMapUIView.swift */,
+				C5EE4046296DC72400BA691B /* MainViewModel.swift */,
+				C5EE403D296DC71400BA691B /* BottomSheetMainView.swift */,
+				C5EE403F296DC71B00BA691B /* Components */,
+			);
+			path = SwiftUIVersion;
+			sourceTree = "<group>";
+		};
+		C5EE403F296DC71B00BA691B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C5EE4040296DC71B00BA691B /* HorizontalButtonView.swift */,
+				C5EE4041296DC71B00BA691B /* SearchBarView.swift */,
+				C5EE4042296DC71B00BA691B /* HorizontalSearchListRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +235,6 @@
 			files = (
 				C583A932296A56DC00B416A6 /* LaunchScreen.storyboard in Resources */,
 				C583A92F296A56DC00B416A6 /* Assets.xcassets in Resources */,
-				C583A92D296A56DA00B416A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +245,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C583A92A296A56DA00B416A6 /* ViewController.swift in Sources */,
+				C583A92A296A56DA00B416A6 /* MainViewController.swift in Sources */,
+				C583A93E296A86DA00B416A6 /* UICollectionViewReusableView+Extension.swift in Sources */,
 				C583A926296A56DA00B416A6 /* AppDelegate.swift in Sources */,
+				C583A941296A88D000B416A6 /* CarouselButtonCell.swift in Sources */,
+				C5EE404B296E368900BA691B /* NotificationName+Extension.swift in Sources */,
+				C5EE4045296DC71B00BA691B /* HorizontalSearchListRow.swift in Sources */,
+				C5EE4043296DC71B00BA691B /* HorizontalButtonView.swift in Sources */,
+				C583A949296B47D300B416A6 /* BottomSheetControllerViewModel.swift in Sources */,
+				C583A943296A8A0200B416A6 /* UIStackView+Extensions.swift in Sources */,
+				C5EE4049296DC72F00BA691B /* CustomPresentationDetents.swift in Sources */,
+				C583A94D296B524700B416A6 /* HorizontalSearchModel.swift in Sources */,
+				C5EE4037296DC08A00BA691B /* SearchBarCell.swift in Sources */,
+				C5EE404D296E4D8D00BA691B /* MainViewControllerViewModel.swift in Sources */,
+				C5EE403C296DC70D00BA691B /* AppleMapUIView.swift in Sources */,
+				C5EE4033296D100B00BA691B /* ListStyleCollectionViewHeader.swift in Sources */,
+				C58062A1296CD23A0028A2D3 /* CarouselButtonModel.swift in Sources */,
+				C5EE4044296DC71B00BA691B /* SearchBarView.swift in Sources */,
+				C5EE4047296DC72400BA691B /* MainViewModel.swift in Sources */,
+				C5EE403E296DC71400BA691B /* BottomSheetMainView.swift in Sources */,
+				C5EE4039296DC4B500BA691B /* SelectionViewController.swift in Sources */,
 				C583A928296A56DA00B416A6 /* SceneDelegate.swift in Sources */,
+				C58062A3296CD6520028A2D3 /* HorizontalSearchCell.swift in Sources */,
+				C583A93A296A5E8900B416A6 /* BottomSheetViewController.swift in Sources */,
+				C583A94B296B524000B416A6 /* HorizontalSearchType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C583A92B296A56DA00B416A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C583A92C296A56DA00B416A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C583A930296A56DC00B416A6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +412,6 @@
 				INFOPLIST_FILE = AppleMapUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +439,6 @@
 				INFOPLIST_FILE = AppleMapUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
